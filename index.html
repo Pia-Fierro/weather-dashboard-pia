@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="card">
-    <div class="card-header row justify-content-center" style="background:turquoise">
+    <div class="card-header row card text-center" style="background:turquoise">
         <h1 id="header-text" class="display-3">Weather Dashboard</h1>
     </div>
     <div class="card-body">
@@ -27,8 +27,13 @@
             </div>
         <div class="col-sm-9 left">
             <div class="card">
-                
-        Current weather in chosen city
+                <div class="card-body">
+                  <h2 class="card-title" id=>City:<span id="city"></span> <span id="icon"></span></h2>
+                  <p class="card-text">Temperature:<span id="temp"></span></p>
+                  <p class="card-text">Humidity:<span id="hum" ></span></p>
+                  <p class="card-text">Wind speed:<span id="wind"></span></p>
+                </div>
+              </div>
         </div>
     </div>
 </body>

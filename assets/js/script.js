@@ -6,12 +6,13 @@ var city = JSON.parse(localStorage.getItem('searchedCity'));
 var lat = JSON.parse(localStorage.getItem('lat'));
 var lon = JSON.parse(localStorage.getItem('lon'));
 var citySearched = document.getElementById("citySearched");
-var date = document.getElementById("date");
-var iconWeather = document.getElementById("icon");
-var temperature = document.getElementById("temp");
-var humidity = document.getElementById("hum");
-var wind = document.getElementById("wind");
-var date = document.getElementById("date");
+var currentDate = document.getElementById("date");
+var iconImg = document.createElement("img");
+var icon = "";
+var weatherIcon = document.getElementById("weather-icon");
+var currentTemperature = document.getElementById("temp");
+var currentHumidity = document.getElementById("hum");
+var currentWind = document.getElementById("wind");
 // var now = new Date(); 
 // var utc = new Date(now. getTime() + now. getTimezoneOffset() * 60000);
 
@@ -45,20 +46,19 @@ function getCoordinates() {
         console.log(lat)
         lon =data.coord.lon;
         console.log(lon)
-        // // save latitude and longitude in local storage
+        // save latitude and longitude in local storage
         localStorage.setItem("lat",JSON.stringify(lat));
         localStorage.setItem("lon",JSON.stringify(lon));
 
         citySearched.textContent = " " + data.name;
-        date.textContent = " " + data.timezone;
-        icon = data.weather[0].icon;
-        console.log(icon)
-        iconWeather.src="https://openweathermap.org/img/wn/" + icon + "@2x.png";
-        // icon.innerHTML= "https://openweathermap.org/img/wn/" + icon + "@2x.png";
-        temperature.textContent = " " + data.main.temp + "°C";
-        // temp.innerHTML = " " + data.main.temp + "°C";
-        humidity.textContent = " " + data.main.humidity + "%";
-        wind.textContent = " " +data.wind.speed + "m/s";    
+        currentDate.textContent = " " + data.timezone;
+        var icon = data.weather[0].icon;
+        console.log(icon);
+        iconImg.setAttribute("src","http://openweathermap.org/img/wn/" + icon + ".png");
+        weatherIcon.appendChild(iconImg);
+        currentTemperature.textContent = " " + data.main.temp + "°C";
+        currentHumidity.textContent = " " + data.main.humidity + "%";
+        currentWind.textContent = " " +data.wind.speed + "m/s";    
 
         getWeather();
     })

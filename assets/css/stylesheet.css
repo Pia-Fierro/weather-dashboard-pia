@@ -1,0 +1,21 @@
+/* styling 5 day forecast */
+
+#forecast {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+.color {
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 5px;
+}

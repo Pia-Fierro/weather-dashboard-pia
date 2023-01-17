@@ -1,14 +1,23 @@
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
+# Weather City Dashboard challenge
 
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+## Description
+This is a weather dashboard that allow users to search for current weather conditions and for the weather forecast for the next 5 following days, by the input city name.
+
+## Usage
+When a city is type in the input line, current weather conditions are display on the top right side
+of screen. The weather conditions include: city name, date, representative weather icon, temperature, wind speed 
+and humidity.
+On bottom left side of the screen, city searched history is added as buttons that in the future, when clicked will searched for weather condition.
+On botton ride side of the screen, user can see the weather forcast for the following 5 days, showing: date, representative weather icon, temperature, wind and humidity.
+
+The weather data is showed in metric internation units. 
+
+## Technology used to build application
+HTML, JavaScript, OpenWeather API, Bootstrap, CSS, DayJS and local storage.
+
+## Link to deploy aplication
+[https://pia-fierro.github.io/weather-dashboard-pia/](https://pia-fierro.github.io//)
+## Screnshot of aplication
+![Weather Dashboard](./assets/images/screenshoot.jpg)
+
 

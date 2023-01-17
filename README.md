@@ -15,9 +15,11 @@ The weather data is showed in metric internation units.
 ## Technology used to build application
 HTML, JavaScript, OpenWeather API, Bootstrap, CSS, DayJS and local storage.
 
-## Link to deploy aplication
-[https://pia-fierro.github.io/weather-dashboard-pia/](https://pia-fierro.github.io//)
-## Screnshot of aplication
-![Weather Dashboard](./assets/images/screenshoot.jpg)
+
+# Link to deploy aplication
+[https://pia-fierro.github.io/weather-dashboard-pia/](https://pia-fierro.github.io/weather-dashboard-pia/)
+
+# Screnshot of aplication
+![Weather Dashboard](./assets/images/screenshot.jpg)
 
 
